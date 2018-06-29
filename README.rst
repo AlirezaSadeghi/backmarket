@@ -11,7 +11,14 @@ Requirements
 
 MoleculeParser requires Python3.5+. 
 
-No other library or dependencies are required to run this project.
+No other library or dependencies are required to `run` this project.
+But in order to generate coverage reports, installing coverage is recommended.
+Requirements can be installed using the following command:
+
+.. code-block:: shell
+    pip install -r requirements.txt
+    # Or since only coverage is required
+    pip install coverage
 
 ***************
 Getting Started
@@ -33,11 +40,26 @@ imports should be fine and you won't need to do any setup.
 Running Tests
 *************
 
-Tests not implemented yet. TODO write them and complete readme
+To run the tests, simply run them using the following command
+
+.. code-block:: shell
+
+    cd blackmarket
+    python -m unittest
+
+To run the tests with coverage, simply run the following:
+
+.. code-block:: shell
+
+    cd blackmarket
+    coverage run -m unittest
+    coverage report
+
+Please notice that these commands should be run on the same level as the molecule_parser directory [so, in PROJECT_DIRECTORY]
 
 *******
 Contact
 *******
 
-Email me at _alireza@pushe.co / alirezasadeghi71@gmail.com_ and I'll get back to you asap.
+Email me at alireza@pushe.co / alirezasadeghi71@gmail.com and I'll get back to you asap.
 

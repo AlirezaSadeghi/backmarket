@@ -1,6 +1,9 @@
 import sys
 from os import path
 
+import logging
+from logging.config import dictConfig
+
 
 def __fix_path__():
     sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
@@ -8,8 +11,13 @@ def __fix_path__():
 
 if __name__ == '__main__':
     __fix_path__()
+
     from molecule_parser.exceptions import FormulaValidationError
     from molecule_parser.parser import MoleculeParser
+    from molecule_parser.config import logging_config
+
+    dictConfig(logging_config)
+    logger = logging.getLogger('parser')
 
     inputs = [
         'H2O',
@@ -24,6 +32,6 @@ if __name__ == '__main__':
         try:
             parser.is_valid()
             parser.process_formula()
-            print('%s ->' % formula, repr(parser))
+            logger.info('%s is valid -> %r' % (formula, repr(parser)))
         except FormulaValidationError as fve:
-            print("Invalid Formula! %r" % fve)
+            logger.error("Invalid Formula! %r" % fve)
