@@ -39,10 +39,10 @@ class StartsWithValidator(BaseValidator):
 class CharCombinationValidator(BaseValidator):
     """
     This validator checks for all combinations of characters to be valid.
-     + A valid formula should only contain alphanumeric characters + ( and )
+     + A valid formula should only contain alphanumeric characters, ( and )
      + A valid formula should have matching number of opening and closing brakcets
 
-     Validation takes o(n) time, loops over all chars and simultaneously checks bracketing and char validity
+     Validation takes o(n) time, loops over all chars, simultaneously checking bracketing and char validity
     """
 
     BRACKETS = {

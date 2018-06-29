@@ -15,7 +15,7 @@ class MoleculeParser:
 
     OPEN_BRACKET_RE = r'[\(\[\{]'
     CLOSE_BRACKET_RE = r'[\)\]\}](\d+)?'
-    FULL_ATOM_RE = r'([A-Z][a-z]?)(\d+)?'
+    ATOM_RE = r'([A-Z][a-z]?)(\d+)?'
 
     def __init__(self, formula):
         self.formula = formula
@@ -37,7 +37,7 @@ class MoleculeParser:
     def _process_formula(self, formula):
         remainder = None
 
-        atom = re.match(MoleculeParser.FULL_ATOM_RE, formula)
+        atom = re.match(MoleculeParser.ATOM_RE, formula)
         opening = re.match(MoleculeParser.OPEN_BRACKET_RE, formula)
         closing = re.match(MoleculeParser.CLOSE_BRACKET_RE, formula)
 
