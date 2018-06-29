@@ -63,7 +63,7 @@ References
 
 I examined several approaches, and meanwhile checked out different resources.
 
-Most notable of those where the following:
+Most notable of those were the following:
 
 https://docs.python.org/3.5/library/re.html
 http://folk.ntnu.no/haugwarb/TKP4106/Tore/Syllabus/topic_03/index.html
