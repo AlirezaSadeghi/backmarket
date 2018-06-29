@@ -57,6 +57,18 @@ To run the tests with coverage, simply run the following:
 
 Please notice that these commands should be run on the same level as the molecule_parser directory [so, in PROJECT_DIRECTORY]
 
+**********
+References
+**********
+
+I examined several approaches, and meanwhile checked out different resources.
+
+Most notable of those where the following:
+
+https://docs.python.org/3.5/library/re.html
+http://folk.ntnu.no/haugwarb/TKP4106/Tore/Syllabus/topic_03/index.html
+https://stackoverflow.com/questions/546433/regular-expression-to-match-outer-brackets
+
 *******
 Contact
 *******
