@@ -2,7 +2,12 @@
 BackMarket's Molecule Parser
 #############################
 
-MoleculeParser is a Python project, designed by BackMarket(Fr) to assess possible job candidates.
+MoleculeParser is a Python project. It recursively parses a chemical formula to find the number of each atom inside the formula.
+
+The formula can contain a complex nested structure of atoms, e.g:
+
+'(GFe)2{SO4(DC4)8}4' -> {'G': 2, 'Fe': 2, 'C': 128, 'D': 32, 'O': 16, 'S': 4}
+
 
 
 ************
@@ -12,7 +17,9 @@ Requirements
 MoleculeParser requires Python3.5+. 
 
 No other library or dependencies are required to `run` this project.
+
 But in order to generate coverage reports, installing coverage is recommended.
+
 Requirements can be installed using the following command:
 
 .. code-block:: shell
@@ -61,17 +68,16 @@ Please notice that these commands should be run on the same level as the molecul
 References
 **********
 
-I examined several approaches, and meanwhile checked out different resources.
-
-Most notable of those were the following:
-
 https://docs.python.org/3.5/library/re.html
+
 http://folk.ntnu.no/haugwarb/TKP4106/Tore/Syllabus/topic_03/index.html
+
 https://stackoverflow.com/questions/546433/regular-expression-to-match-outer-brackets
+
 
 *******
 Contact
 *******
 
-Email me at alireza@pushe.co / alirezasadeghi71@gmail.com and I'll get back to you asap.
+Feel Free! alireza@pushe.co / alirezasadeghi71@gmail.com
 
