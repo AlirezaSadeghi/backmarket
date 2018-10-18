@@ -1,5 +1,5 @@
 #############################
-BackMarket's Molecule Parser
+Molecule Parser
 #############################
 
 MoleculeParser is a Python project. It recursively parses a chemical formula to find the number of each atom inside the formula.
@@ -40,7 +40,7 @@ Simply issue the following commands in project directory:
     cd molecule_parser
     python main.py
 
-Project's root directory (e.g. backmarket) is automatically added to your python path so
+Project's root directory is automatically added to your python path so
 imports should be fine and you won't need to do any setup.
 
 *************
@@ -51,14 +51,14 @@ To run the tests, simply run them using the following command
 
 .. code-block:: shell
 
-    cd backmarket
+    cd proj
     python -m unittest
 
 To run the tests with coverage, simply run the following:
 
 .. code-block:: shell
 
-    cd backmarket
+    cd proj
     coverage run -m unittest
     coverage report
 
